@@ -28,7 +28,7 @@
 </head>
 
 
-<body>
+<body class="inside">
 
 <div id="wrapper">
     <div class="overlay"></div>
@@ -66,77 +66,49 @@
         </nav>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <br/>
-                    <br/>
-                        <div class="table-responsive">
-                            <table class="table"><thead>
-                            <tr>
-                                <th>اليوم</th>
-                                <th>الأولى</th>
-                                <th>الثانية</th>
-                                <th>الثالثة</th>
-                                <th>الرابعه</th>
-                                <th>الخامسة</th>
-                                <th>السادسة</th>
-                                <th>السابعة</th>
-                            </tr>
-                            </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">الآحد</th>
-                                    <td id="su_1"></td>
-                                    <td id="su_2"></td>
-                                    <td id="su_3"></td>
-                                    <td id="su_4"></td>
-                                    <td id="su_5"></td>
-                                    <td id="su_6"></td>
-                                    <td id="su_7"></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">الإثنين</th>
-                                    <td id="mu_1"></td>
-                                    <td id="mu_2"></td>
-                                    <td id="mu_3"></td>
-                                    <td id="mu_4"></td>
-                                    <td id="mu_5"></td>
-                                    <td id="mu_6"></td>
-                                    <td id="mu_7"></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">الثلاثاء</th>
-                                    <td id="tu_1"></td>
-                                    <td id="tu_2"></td>
-                                    <td id="tu_3"></td>
-                                    <td id="tu_4"></td>
-                                    <td id="tu_5"></td>
-                                    <td id="tu_6"></td>
-                                    <td id="tu_7"></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">الأربعاء</th>
-                                    <td id="wi_1"></td>
-                                    <td id="wi_2"></td>
-                                    <td id="wi_3"></td>
-                                    <td id="wi_4"></td>
-                                    <td id="wi_5"></td>
-                                    <td id="wi_6"></td>
-                                    <td id="wi_7"></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">الخميس</th>
-                                    <td id="th_1"></td>
-                                    <td id="th_2"></td>
-                                    <td id="th_3"></td>
-                                    <td id="th_4"></td>
-                                    <td id="th_5"></td>
-                                    <td id="th_6"></td>
-                                    <td id="th_7"></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+
+                <ul class="timeline" id="table">
+                    <li><div class="tldate">الأحد</div></li>
+                    <li id="su_1" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الأولى</h4></div><div class="tl-body"><p class="su_1"></p></div></div></li>
+                    <li id="su_2" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الثانية</h4></div><div class="tl-body"><p class="su_2"></p></div></div></li>
+                    <li id="su_3" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الثالثة</h4></div><div class="tl-body"><p class="su_3"></p></div></div></li>
+                    <li id="su_4" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الرابعه</h4></div><div class="tl-body"><p class="su_4"></p></div></div></li>
+                    <li id="su_5" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الخامسه</h4></div><div class="tl-body"><p class="su_5"></p></div></div></li>
+                    <li id="su_6" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة السادسه</h4></div><div class="tl-body"><p class="su_6"></p></div></div></li>
+                    <li id="su_7" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة السابعه</h4></div><div class="tl-body"><p class="su_7"></p></div></div></li>
+                    <li><div class="tldate">الإثنين</div></li>
+                    <li id="mu_1" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الأولى</h4></div><div class="tl-body"><p class="mu_1"></p></div></div></li>
+                    <li id="mu_2" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الثانية</h4></div><div class="tl-body"><p class="mu_2"></p></div></div></li>
+                    <li id="mu_3" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الثالثة</h4></div><div class="tl-body"><p class="mu_3"></p></div></div></li>
+                    <li id="mu_4" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الرابعه</h4></div><div class="tl-body"><p class="mu_4"></p></div></div></li>
+                    <li id="mu_5" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الخامسه</h4></div><div class="tl-body"><p class="mu_5"></p></div></div></li>
+                    <li id="mu_6" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة السادسه</h4></div><div class="tl-body"><p class="mu_6"></p></div></div></li>
+                    <li id="mu_7" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة السابعه</h4></div><div class="tl-body"><p class="mu_7"></p></div></div></li>
+                    <li><div class="tldate">الثلاثاء</div></li>
+                    <li id="tu_1" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الأولى</h4></div><div class="tl-body"><p class="tu_1"></p></div></div></li>
+                    <li id="tu_2" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الثانية</h4></div><div class="tl-body"><p class="tu_2"></p></div></div></li>
+                    <li id="tu_3" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الثالثة</h4></div><div class="tl-body"><p class="tu_3"></p></div></div></li>
+                    <li id="tu_4" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الرابعه</h4></div><div class="tl-body"><p class="tu_4"></p></div></div></li>
+                    <li id="tu_5" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الخامسه</h4></div><div class="tl-body"><p class="tu_5"></p></div></div></li>
+                    <li id="tu_6" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة السادسه</h4></div><div class="tl-body"><p class="tu_6"></p></div></div></li>
+                    <li id="tu_7" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة السابعه</h4></div><div class="tl-body"><p class="tu_7"></p></div></div></li>
+                    <li><div class="tldate">الأربعاء</div></li>
+                    <li id="wi_1" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الأولى</h4></div><div class="tl-body"><p class="wi_1"></p></div></div></li>
+                    <li id="wi_2" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الثانية</h4></div><div class="tl-body"><p class="wi_2"></p></div></div></li>
+                    <li id="wi_3" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الثالثة</h4></div><div class="tl-body"><p class="wi_3"></p></div></div></li>
+                    <li id="wi_4" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الرابعه</h4></div><div class="tl-body"><p class="wi_4"></p></div></div></li>
+                    <li id="wi_5" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الخامسه</h4></div><div class="tl-body"><p class="wi_5"></p></div></div></li>
+                    <li id="wi_6" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة السادسه</h4></div><div class="tl-body"><p class="wi_6"></p></div></div></li>
+                    <li id="wi_7" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة السابعه</h4></div><div class="tl-body"><p class="wi_7"></p></div></div></li>
+                    <li><div class="tldate">الخميس</div></li>
+                    <li id="th_1" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الأولى</h4></div><div class="tl-body"><p class="th_1"></p></div></div></li>
+                    <li id="th_2" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الثانية</h4></div><div class="tl-body"><p class="th_2"></p></div></div></li>
+                    <li id="th_3" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الثالثة</h4></div><div class="tl-body"><p class="th_3"></p></div></div></li>
+                    <li id="th_4" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الرابعه</h4></div><div class="tl-body"><p class="th_4"></p></div></div></li>
+                    <li id="th_5" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الخامسه</h4></div><div class="tl-body"><p class="th_5"></p></div></div></li>
+                    <li id="th_6" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة السادسه</h4></div><div class="tl-body"><p class="th_6"></p></div></div></li>
+                    <li id="th_7" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة السابعه</h4></div><div class="tl-body"><p class="th_7"></p></div></div></li>
+                </ul>
             </div>
         </div>
     </div>

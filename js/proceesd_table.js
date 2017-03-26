@@ -53,7 +53,6 @@ $(document).ready(function() {
     var id = localStorage.id;
     var url = "http://najd.ogail.net/app/table.php";
     $.getJSON(url, function(result) {
-        console.log(result);
         $.each(result, function(i, field) {
             var class1 = field.class;
             var day = field.day;
@@ -66,117 +65,152 @@ $(document).ready(function() {
             var seven = field.seven;
             if(day == 'su'){
                 if (one == id){
-                    $("#su_1").append( class1 );
+                    $("#su_1").removeClass('display');
+                    $("#table .su_1").append(class1);
                 }
                 if (two == id){
-                    $("#su_2").append( class1 );
+                    $("#su_2").removeClass('display');
+                    $("#table .su_2").append(class1);
                 }
                 if (three == id){
-                    $("#su_3").append( class1 );
+                    $("#su_3").removeClass('display');
+                    $("#table .su_3").append(class1);
                 }
                 if (four == id){
-                    $("#su_4").append( class1 );
+                    $("#su_4").removeClass('display');
+                    $("#table .su_4").append(class1);
                 }
-                if (five == id){
-                    $("#su_5").append( class1 );
+                if (five == id) {
+                    $("#su_5").removeClass('display');
+                    $("#table .su_5").append(class1);
                 }
-                if (six == id){
-                    $("#su_6").append( class1 );
+                if (six == id) {
+                    $("#su_6").removeClass('display');
+                    $("#table .su_6").append(class1);
                 }
                 if (seven == id){
-                    $("#su_7").append( class1 );
+                    $("#su_7").removeClass('display');
+                    $("#table .su_7").append(class1);
                 }
             }
             if(day == 'mu'){
                 if (one == id){
-                    $("#mu_1").append( class1 );
+                    $("#mu_1").removeClass('display');
+                    $("#table .mu_1").append(class1);
                 }
                 if (two == id){
-                    $("#mu_2").append( class1 );
+                    $("#mu_2").removeClass('display');
+                    $("#table .mu_2").append(class1);
                 }
                 if (three == id){
-                    $("#mu_3").append( class1 );
+                    $("#mu_3").removeClass('display');
+                    $("#table .mu_3").append(class1);
                 }
                 if (four == id){
-                    $("#mu_4").append( class1 );
+                    $("#mu_4").removeClass('display');
+                    $("#table .mu_4").append(class1);
                 }
-                if (five == id){
-                    $("#mu_5").append( class1 );
+                if (five == id) {
+                    $("#mu_5").removeClass('display');
+                    $("#table .mu_5").append(class1);
                 }
-                if (six == id){
-                    $("#mu_6").append( class1 );
+                if (six == id) {
+                    $("#mu_6").removeClass('display');
+                    $("#table .mu_6").append(class1);
                 }
                 if (seven == id){
-                    $("#mu_7").append( class1 );
+                    $("#mu_7").removeClass('display');
+                    $("#table .mu_7").append(class1);
                 }
             }
             if(day == 'tu'){
                 if (one == id){
-                    $("#tu_1").append( class1 );
+                    $("#tu_1").removeClass('display');
+                    $("#table .tu_1").append(class1);
                 }
                 if (two == id){
-                    $("#tu_2").append( class1 );
+                    $("#tu_2").removeClass('display');
+                    $("#table .tu_2").append(class1);
                 }
                 if (three == id){
-                    $("#tu_3").append( class1 );
+                    $("#tu_3").removeClass('display');
+                    $("#table .tu_3").append(class1);
                 }
                 if (four == id){
-                    $("#tu_4").append( class1 );
+                    $("#tu_4").removeClass('display');
+                    $("#table .tu_4").append(class1);
                 }
-                if (five == id){
-                    $("#tu_5").append( class1 );
+                if (five == id) {
+                    $("#tu_5").removeClass('display');
+                    $("#table .tu_5").append(class1);
                 }
-                if (six == id){
-                    $("#tu_6").append( class1 );
+                if (six == id) {
+                    $("#tu_6").removeClass('display');
+                    $("#table .tu_6").append(class1);
                 }
                 if (seven == id){
-                    $("#tu_7").append( class1 );
+                    $("#tu_7").removeClass('display');
+                    $("#table .tu_7").append(class1);
                 }
             }
             if(day == 'wi'){
                 if (one == id){
-                    $("#wi_1").append( class1 );
+                    $("#wi_1").removeClass('display');
+                    $("#table .wi_1").append(class1);
                 }
                 if (two == id){
-                    $("#wi_2").append( class1 );
+                    $("#wi_2").removeClass('display');
+                    $("#table .wi_2").append(class1);
                 }
                 if (three == id){
-                    $("#wi_3").append( class1 );
+                    $("#wi_3").removeClass('display');
+                    $("#table .wi_3").append(class1);
                 }
                 if (four == id){
-                    $("#wi_4").append( class1 );
+                    $("#wi_4").removeClass('display');
+                    $("#table .wi_4").append(class1);
                 }
-                if (five == id){
-                    $("#wi_5").append( class1 );
+                if (five == id) {
+                    $("#wi_5").removeClass('display');
+                    $("#table .wi_5").append(class1);
                 }
-                if (six == id){
-                    $("#wi_6").append( class1 );
+                if (six == id) {
+                    $("#wi_6").removeClass('display');
+                    $("#table .wi_6").append(class1);
                 }
                 if (seven == id){
-                    $("#wi_7").append( class1 );
+                    $("#wi_7").removeClass('display');
+                    $("#table .wi_7").append(class1);
                 }
             }
             if(day == 'th'){
                 if (one == id){
-                    $("#th_1").append( class1 );
+                    $("#th_1").removeClass('display');
+                    $("#table .th_1").append(class1);
                 }
                 if (two == id){
-                    $("#th_2").append( class1 );
+                    $("#th_2").removeClass('display');
+                    $("#table .th_2").append(class1);
                 }
                 if (three == id){
-                    $("#th_3").append( class1 );
+                    $("#th_3").removeClass('display');
+                    $("#table .th_3").append(class1);
                 }
                 if (four == id){
-                    $("#th_4").append( class1 );
+                    $("#th_4").removeClass('display');
+                    $("#table .th_4").append(class1);
                 }
-                if (five == id){
-                    $("#th_5").append( class1 );
+                if (five == id) {
+                    $("#th_5").removeClass('display');
+                    $("#table .th_5").append(class1);
                 }
-                if (six == id){
-                    $("#th_6").append( class1 );
+                if (six == id) {
+                    $("#th_6").removeClass('display');
+                    $("#table .th_6").append(class1);
                 }
                 if (seven == id){
-                    $("#th_7").append( class1 );
+                    $("#th_7").removeClass('display');
+                    $("#table .th_7").append(class1);
                 }
             }
         });
