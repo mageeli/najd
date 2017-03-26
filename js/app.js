@@ -82,9 +82,11 @@ document.addEventListener("app.Ready", onAppReady, false) ;
   $(document).ready(function(){
         $("#logout").click(function(){
             localStorage.login="false";
+            localStorage.id='';
             window.location.href = "login.html";
         });
     });
+
 
 $("#btn-login").click(function(){
     var id_num=$("#id_num").val();
