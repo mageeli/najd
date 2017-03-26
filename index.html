@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+<head>
+    <title>ثانوية نجد</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <style>
+        /* following two viewport lines are equivalent to the meta viewport statement above, needed for Windows */
+        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+        @-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+    </style>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/proceed_info.js"></script>
+    <script src="js/app.js"></script>
+    <!-- normalizes device and document ready events, see README for details -->
+</head>
+
+
+<body class="inside">
+
+<div id="wrapper">
+    <div class="overlay"></div>
+
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+        <ul class="nav sidebar-nav">
+            <li class="sidebar-brand">
+                <center></center>
+            </li>
+            <li>
+                <a href="index.html">بيانات المعلم</a>
+            </li>
+            <li>
+                <a href="table.html">جدول المعلم</a>
+            </li>
+            <li>
+                <a id="logout"  href="#">خروج</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                    <span class="hamb-top"></span>
+                    <span class="hamb-middle"></span>
+                    <span class="hamb-bottom"></span>
+                </button>
+                <center><img src="images/logo.jpg"></center>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="list col-xs-12" id="t_info">
+                        <div class="col-xs-12" id="t_name"></div>
+                        <div class="col-xs-4" id="t_id_num"></div>
+                        <div class="col-xs-4" id="t_specialty"></div>
+                        <div class="col-xs-4 " id="t_phone"></div>
+                    </div>
+
+
+                    <div class="list col-xs-12 text-size" id="t_view">
+                        <div class="col-xs-6" id="abs_t"> الغياب بعذر: <span class="abs_t"></span>أيام</div>
+                        <div class="col-xs-6" id="abs_f">الغياب بدون عذر: <span class="abs_f"></span> أيام</div>
+                        <div class="col-xs-6" id="late_m">التأخرات الصباحية: <span class="late_m"></span> دقيقة</div>
+                        <div class="col-xs-6" id="late_c">تأخرات الحصص: <span class="late_c"></span> دقيقة</div>
+                        <div class="col-xs-6" id="late_f">الغياب عن إشراف الفسحة: <span class="late_f"></span> مرات</div>
+                        <div class="col-xs-6" id="vac">رصيد الإجازة الإضطرارية: <span class="vac"></span> أيام</div>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <footer class="text-center" id="footer"> Copyright &copy;Sultan Alafifi</footer>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+<head>
+    <title>ثانوية نجد</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <style>
+        /* following two viewport lines are equivalent to the meta viewport statement above, needed for Windows */
+        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+        @-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+    </style>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/proceesd_view.js"></script>
+    <script src="js/app.js"></script>
+    <!-- normalizes device and document ready events, see README for details -->
+</head>
+
+
+<body>
+
+<div id="wrapper">
+    <div class="overlay"></div>
+
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+        <ul class="nav sidebar-nav">
+            <li class="sidebar-brand">
+                <center><img src="images/Icon-36x36.png"/></center>
+            </li>
+            <li>
+                <a href="index.html">بيانات المعلم</a>
+            </li>
+            <li>
+                <a href="view.html">الغيابات والتأخرات</a>
+            </li>
+            <li>
+                <a href="table.html">جدول المعلم</a>
+            </li>
+            <li>
+                <a id="logout"  href="#">خروج</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                    <span class="hamb-top"></span>
+                    <span class="hamb-middle"></span>
+                    <span class="hamb-bottom"></span>
+                </button>
+                <center><img src="images/insideLogo.png"/></center>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <br/>
+                    <br/>
+                    <ul class="list" id="talablistview">
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+</body>
+</html>
