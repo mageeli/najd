@@ -376,7 +376,9 @@ table{
 .inside{
     background:#f8f8f8;
 }
-
+.inside .row{
+    margin-top:100px;
+}
 .top{
     margin-top:35%;
     text-align:center;
@@ -833,7 +835,7 @@ img
     border-top-left-radius: 50%;
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
-    z-index: 99999;
+    z-index: 99;
 }
 
 

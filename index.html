@@ -30,6 +30,9 @@
             if(id == ''){
                 window.location.href = "login.html";
             }
+            else if(localStorage.id == null){
+                window.location.href = "login.html";
+            }
         });
     </script>
     <!-- normalizes device and document ready events, see README for details -->
@@ -48,13 +51,13 @@
                 <center></center>
             </li>
             <li>
-                <a href="index.html">بيانات المعلم</a>
+                <a href="index.html"><span class="glyphicon glyphicon-user"></span>   بيانات المعلم </a>
             </li>
             <li>
-                <a href="table.html">جدول المعلم</a>
+                <a href="table.html"> <span class="glyphicon glyphicon-calendar"></span>   جدول المعلم</a>
             </li>
             <li>
-                <a id="logout"  href="#">خروج</a>
+                <a id="logout"  href="#"><span class="glyphicon glyphicon-off"></span>  خروج</a>
             </li>
         </ul>
     </nav>
@@ -62,7 +65,7 @@
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
-        <nav class="navbar navbar-default" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
                     <span class="hamb-top"></span>
@@ -75,14 +78,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
+                    <h5><span class="glyphicon glyphicon-user"></span>  البيانات الشخصية</h5>
                     <div class="list col-xs-12" id="t_info">
                         <div class="col-xs-12" id="t_name"></div>
                         <div class="col-xs-4" id="t_id_num"></div>
                         <div class="col-xs-4" id="t_specialty"></div>
                         <div class="col-xs-4 " id="t_phone"></div>
                     </div>
-
-
+                    <h5><span class="glyphicon glyphicon-sort"></span>  الغيابات والتأخرات</h5>
                     <div class="list col-xs-12 text-size" id="t_view">
                         <div class="col-xs-6" id="abs_t"> الغياب بعذر: <span class="abs_t"></span>أيام</div>
                         <div class="col-xs-6" id="abs_f">الغياب بدون عذر: <span class="abs_f"></span> أيام</div>

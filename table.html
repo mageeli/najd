@@ -30,6 +30,9 @@
             if(id == ''){
                 window.location.href = "login.html";
             }
+            else if(localStorage.id == null){
+                window.location.href = "login.html";
+            }
         });
     </script>
     <!-- normalizes device and document ready events, see README for details -->
@@ -48,13 +51,13 @@
                 <center></center>
             </li>
             <li>
-                <a href="index.html">بيانات المعلم</a>
+                <a href="index.html"><span class="glyphicon glyphicon-user"></span>   بيانات المعلم </a>
             </li>
             <li>
-                <a href="table.html">جدول المعلم</a>
+                <a href="table.html"> <span class="glyphicon glyphicon-calendar"></span>   جدول المعلم</a>
             </li>
             <li>
-                <a id="logout" href="#">خروج</a>
+                <a id="logout"  href="#"><span class="glyphicon glyphicon-off"></span>  خروج</a>
             </li>
         </ul>
     </nav>
@@ -62,7 +65,7 @@
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
-        <nav class="navbar navbar-default" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
                     <span class="hamb-top"></span>
@@ -74,7 +77,6 @@
         </nav>
         <div class="container">
             <div class="row">
-
                 <ul class="timeline" id="table">
                     <li><div class="tldate">الأحد</div></li>
                     <li id="su_1" class="display"><div class="tl-circ"></div><div class="timeline-panel"><div class="tl-heading"><h4>الحصة الأولى</h4></div><div class="tl-body"><p class="su_1"></p></div></div></li>
