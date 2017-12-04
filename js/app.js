@@ -85,33 +85,63 @@ document.addEventListener("app.Ready", onAppReady, false) ;
             localStorage.id='';
             window.location.href = "login.html";
         });
+      $.ajaxSetup({
+          headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json',
+              'Access-Control-Allow-Origin': 'http://localhost:8000/api/',
+              'Access-Control-Allow-Headers': '*',
+              'Access-Control-Allow-Credentials': true,
+              //'X-Requested-With ': 'XMLHttpRequest',
+              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+          }
+      });
+      $.ajax({
+          type: "get",
+          url: "http://localhost:8000/api/topics",
+          dataType: "jsonp",
+          success: function(data, textStatus, xhr){
+              console.log(data);
+              alert('hi');
+          }
+      });
     });
+
 
 
 $("#btn-login").click(function(){
     var id_num=$("#id_num").val();
     var phone=$("#phone").val();
-    var dataString="id_num="+id_num+"&phone="+phone+"&btn-login=";
+    var grant_type = "password";
+    var client_id = "2";
+    var client_secret = "xoXDsP8SQ9DsE3tDU820Zb3vfv4YNE915ppeBFZF";
+    var scope = "*";
+    var dataString="grant_type"+grant_type+"&client_id"+client_id+"&client_secret"+client_secret+"&username="+id_num+"&password="+phone+"&btn-scope"+scope;
     if($.trim(id_num).length>0 & $.trim(phone).length>0)
     {
+        $.ajaxSetup({
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Headers': '*',
+                'Access-Control-Allow-Credentials': true,
+                //'X-Requested-With ': 'XMLHttpRequest',
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
         $.ajax({
-            type: "POST",
-            url: "http://najd.ogail.net/app/insert.php",
+            type: "post",
+            url: "http://localhost:8000/oauth/token",
+            dataType: "json",
             data: dataString,
             crossDomain: true,
             cache: false,
             beforeSend: function(){ $("#btn-login").html('Connecting...');},
             success: function(data){
-                if(data.substring(0,7)=="success")
-                {
-                    localStorage.id=data.substring(7, 10);
+                    console.log(data);
                     localStorage.login="true";
                     window.location.href = "index.html";
-                }
-                else if(data="failed")
-                {
-                    $("#main_alert").html('<div class="alert alert-danger" role="alert">اسم المستمخدم أو كلمة السر خاطئة</div>');
-                }
             }
         });
     }

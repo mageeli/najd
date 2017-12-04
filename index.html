@@ -105,6 +105,19 @@
 
 </div>
 <!-- /#wrapper -->
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            type: "get",
+            url: "http://localhost:8000/api/topics",
+            dataType: "json",
+            success: function(data){
+                console.log(data);
+                alert('hi');
+            }
+        });
+    });
 
+</script>
 </body>
 </html>
